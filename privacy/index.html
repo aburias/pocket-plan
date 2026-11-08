@@ -22,9 +22,9 @@
 <body>
 <main>
   <h1>Pocket Plan Privacy Policy</h1>
-  <p class="muted">Effective November 7, 2026 · Applies to the Pocket Plan app for Android · <a href="../terms/">Terms of Service</a></p>
+  <p class="muted">Effective November 8, 2026 · Applies to the Pocket Plan app for Android · <a href="../terms/">Terms of Service</a></p>
 
-  <p>Pocket Plan is a personal budgeting app. It is built so that your money data stays on your phone. We (the developer of Pocket Plan) do not run servers for the app, do not have user accounts, and do not receive your data.</p>
+  <p>Pocket Plan is a personal budgeting app. It is built so that your money data stays on your phone. We (the developer of Pocket Plan) do not run servers for the app, do not have user accounts, and do not receive your data, except an AI answer you choose to report (see <a href="#reports">Reporting an AI answer</a>).</p>
 
   <h2>Data stored on your phone</h2>
   <p>The app stores the following only on your device, in a database encrypted with AES-256 (SQLCipher) whose key is protected by the Android Keystore:</p>
@@ -41,10 +41,10 @@
   <table>
     <tr><th>What</th><th>When</th></tr>
     <tr><td>Your message, or the text recognised from your voice</td><td>Whenever you send something in the assistant</td></tr>
-    <tr><td>Voice recordings</td><td>Only for voice entries with Gemini or OpenAI. With Claude and OpenRouter, speech is converted to text on your phone first.</td></tr>
+    <tr><td>Voice recordings</td><td>Only for voice entries with Gemini or OpenAI. With Claude or OpenRouter, or with no AI key, your phone's speech recognition turns speech into text first. Depending on your phone, that may use its built-in speech service (for example Google's), under that service's terms.</td></tr>
     <tr><td>Photos you attach (receipts, screenshots)</td><td>Only when you attach or share one. Photos are re-saved before upload, which removes location and other metadata.</td></tr>
     <tr><td>Category names and account nicknames</td><td>With every request, so entries can be filed correctly</td></tr>
-    <tr><td>A money summary: account balances, monthly totals, your 40 most recent entries, detected recurring payments and flags</td><td>Only if "Let the advisor read my history" is on (Settings › Security &amp; privacy). It is on by default and can be turned off.</td></tr>
+    <tr><td>A money summary: account balances, monthly totals, your 40 most recent entries, detected recurring payments and flags</td><td>Only if "Let the advisor read my history" is on (Me › Security &amp; privacy). It is on by default and can be turned off.</td></tr>
   </table>
   <p><strong>Never sent:</strong> account numbers, account holder names and your API keys (except to the provider the key belongs to, to authenticate).</p>
   <p>How each provider handles this data is governed by its own terms and privacy policy, which you agree to when you create your API key. Requests use HTTPS, and the app does not trust user-installed certificates.</p>
@@ -56,11 +56,14 @@
     <li>CSV import and password-protected backup files, which are written only where you choose to save them.</li>
   </ul>
 
+  <h2 id="reports">Reporting an AI answer</h2>
+  <p>Every AI answer has a <strong>Report</strong> option. If you tap it and then <strong>Send report</strong>, Pocket Plan emails that report to our support address (support@daloytechsolutions.com). The report contains your question, the AI's answer, the reason and note you chose, the AI provider and model name, and the app version. It contains nothing else from the app, such as balances, accounts or other entries. The email is delivered by FormSubmit (formsubmit.co), an email relay service. Nothing is sent unless you tap Send. If you're offline, the report waits on your phone and is sent later. We use reports only to look into problems with AI answers, and delete them when no longer needed.</p>
+
   <h2>Permissions</h2>
   <ul>
     <li><strong>Microphone</strong>: only while you hold the mic button to record an entry.</li>
     <li><strong>Notifications</strong>: only if you turn on daily check-ins.</li>
-    <li><strong>Internet</strong>: only to reach the AI provider you chose.</li>
+    <li><strong>Internet</strong>: only to reach the AI provider you chose, and to send a report if you choose to.</li>
     <li><strong>Camera and photos</strong>: Pocket Plan uses the system camera and photo picker, so it only receives the single photo you take or pick.</li>
     <li><strong>Biometrics / device lock</strong>: to unlock the app if you turn on app lock. Pocket Plan never sees your fingerprint or PIN.</li>
   </ul>
@@ -68,12 +71,12 @@
   <h2>What we don't do</h2>
   <ul>
     <li>No analytics, advertising or tracking SDKs.</li>
-    <li>No selling or sharing of your data. We never receive it.</li>
+    <li>No selling or sharing of your data. We never receive it, apart from reports you choose to send.</li>
     <li>No moving of money. Pocket Plan is a budgeting tool, not a bank or payment service.</li>
   </ul>
 
   <h2>Your control and deletion</h2>
-  <p>You can edit or delete any entry, remove your API keys, turn off history sharing, or erase everything in Settings › Import &amp; backup › Erase all data. Uninstalling the app also deletes all of its data from your phone. Data you sent to an AI provider is handled under that provider's retention policy; contact the provider to request deletion there.</p>
+  <p>You can edit or delete any entry, remove your API keys, turn off history sharing, or erase everything in Me › Backup &amp; import › Erase all data. Uninstalling the app also deletes all of its data from your phone. Data you sent to an AI provider is handled under that provider's retention policy; contact the provider to request deletion there.</p>
 
   <h2>Children</h2>
   <p>Pocket Plan is intended for adults and is not directed at children under 13.</p>
